@@ -1,0 +1,8 @@
+native_key,region,site,category,finding,finding_harmonized,finding_parent,finding_subtype,finding_harmonization,label_confidence,imaging,procedure,location_source,note
+N,,,normal,normal-mucosa,normal-mucosa,,,mapped,high,,,,"README: N = Normal. Explicit normal class of a Crohn capsule exam (frames of Crohn patients; the README does not say whether healthy controls are included)"
+E,,,pathological-findings,erythema,erythema,,,mapped,high,,,,"README: E = Erytheme (French code). Same lesion type as see-ai class erythema"
+O,,,pathological-findings,edema,edema,,,mapped,high,,,,"README: O = (O)edema (French code); slug uses the American spelling edema"
+AU,,,pathological-findings,aphthoid-ulceration,aphthoid-ulceration,ulcer,,mapped,high,,,,"README: AU = Aphthoid ulceration. Kept apart from `erosion` (clinically close: small aphthae); pooled with the ulcers only through finding_parent"
+U3-10,,,pathological-findings,ulcer,ulcer,ulcer,3-10mm,mapped,high,,,,"README: U3-10 = ulceration between 3 mm and 10 mm; size class in finding_subtype"
+U>10,,,pathological-findings,ulcer,ulcer,ulcer,gt-10mm,mapped,high,,,,"README: U>10 = ulceration over 10 mm; size class in finding_subtype"
+S,,,pathological-findings,stenosis,stenosis,,,mapped,high,,,,"README: S = Stenosis"

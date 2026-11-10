@@ -1,0 +1,4 @@
+native_key,region,site,category,finding,finding_harmonized,finding_parent,finding_subtype,finding_harmonization,label_confidence,imaging,procedure,location_source,note
+Polyp,lower-gi-tract,colon,pathological-findings,polyps,polyps,,,identity,high,,,,example: the native class 'Polyp' (folder name) is the canonical polyps class
+Normal,,,normal,normal-mucosa,normal-mucosa,,,identity,high,,,,example: explicit normal class -> category normal
+No polyp,,,background,no-polyp-annotated,no-polyp-annotated,,,derived,medium,,,,example: frame without box in a detection dataset -> category background (NOT normal-mucosa)

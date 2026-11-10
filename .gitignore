@@ -1,0 +1,56 @@
+# =============================================================================
+# DATASETS - never tracked
+# =============================================================================
+# data/ is DEFAULT-DENY: everything directly inside it is ignored unless it is
+# explicitly re-included in the allowlist below. A newly downloaded dataset
+# folder (or a stray dev.csv) is therefore ignored without editing this file.
+#
+# Paths are anchored with a leading "/" on purpose: an unanchored "data/" would
+# also match data/unify/data/, which holds a small tracked CSV.
+/data/*
+
+# --- Allowlist: the only things in data/ that belong in git -----------------
+!/data/MERGE_PROCESS.md
+!/data/merged-labels.csv
+!/data/docs/
+!/data/unify/
+
+# Regenerable md5 cache: hashes of every dataset file, keyed on mtime_ns, so it
+# is stale on any other machine. build.py recreates it.
+/data/unify/cache/
+
+# --- Safety net: dataset-style binaries, wherever they end up ----------------
+# Catches images/videos/archives copied outside data/, or dropped inside the
+# allowlisted data/docs/ or data/unify/. To track a real figure on purpose, add
+# a "!path/to/figure.png" line below or use `git add -f`.
+*.png
+*.jpg
+*.jpeg
+*.tif
+*.tiff
+*.bmp
+*.gif
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wmv
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+*.dcm
+*.nii
+*.nii.gz
+
+# =============================================================================
+# Python / tooling
+# =============================================================================
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.idea/
+.DS_Store

@@ -1,0 +1,2 @@
+native_key,region,site,category,finding,finding_harmonized,finding_parent,finding_subtype,finding_harmonization,label_confidence,imaging,procedure,location_source,note
+polyp,lower-gi-tract,colon,pathological-findings,polyp,polyps,polyps,,mapped,high,white-light,colonoscopy,dataset-constant,the only class: white (255) pixels of the mask; every one of the 196 images is polyp-positive; colon = dataset-wide constant (colonoscopy polyp database)

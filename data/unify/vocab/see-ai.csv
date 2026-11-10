@@ -1,0 +1,14 @@
+native_key,region,site,category,finding,finding_harmonized,finding_parent,finding_subtype,finding_harmonization,label_confidence,imaging,procedure,location_source,note
+angiodysplasia,,,pathological-findings,angiodysplasia,angiectasia,,,mapped,high,,,,"class id 0. Vascular lesion; harmonised to `angiectasia` (= Kvasir-Capsule 'Angiectasia'); the native spelling stays in finding_raw"
+erosion,,,pathological-findings,erosion,erosion,,,,high,,,,class id 1. Largest lesion class by images (4390)
+stenosis,,,pathological-findings,stenosis,stenosis,,,,high,,,,"class id 2. Boxes are large (median 75% of the frame width)"
+lymphangiectasia,,,pathological-findings,lymphangiectasia,lymphangiectasia,,,,high,,,,class id 3
+lymph follicle,,,pathological-findings,lymph-follicle,lymph-follicle,,,,low,,,,"class id 4. Lymphoid follicles are benign / a normal variant but are annotated as a lesion class (6788 boxes, the largest class by boxes): kept under pathological-findings with LOW confidence so that a normal-vs-pathology model can down-weight or drop it"
+SMT,,,pathological-findings,submucosal-tumor,submucosal-tumor,,,mapped,high,,,,"class id 5. SMT = submucosal tumour (abbreviation expanded; the native code stays in finding_raw)"
+polyp-like,,,pathological-findings,polyp-like,polyp-like-lesion,polyps,,mapped,medium,,,,"class id 6. Protruding small-bowel lesion; pooled with colonic polyps only through finding_parent (read it together with region)"
+bleeding,,,pathological-findings,bleeding,bleeding,,,,high,,,,class id 7
+diverticulum,,,pathological-findings,diverticulum,diverticulum,,,,medium,,,,"class id 8. Rare (54 boxes)"
+erythema,,,pathological-findings,erythema,erythema,,,,high,,,,class id 9
+foreign body,,,pathological-findings,foreign-body,foreign-body,,,,medium,,,,"class id 10. Pill / debris-like objects; listed among the lesion classes by the dataset"
+vein,,,pathological-findings,vein,vein,,,,low,,,,"class id 11. Visible vein = normal vascular anatomy (or an angiectasia mimic) annotated as a lesion class: kept under pathological-findings with LOW confidence"
+(empty txt),,,background,no-lesion-annotated,no-lesion-annotated,,,derived,medium,,,,"empty .txt = none of the 12 lesion classes annotated (6161 images). NOT verified normal mucosa: may contain non-diagnostic frames (food, bubbles, hair-like debris)"

@@ -1,0 +1,9 @@
+native_key,region,site,category,finding,finding_harmonized,finding_parent,finding_subtype,finding_harmonization,label_confidence,imaging,procedure,location_source,note
+specularity,,,artefact,specularity,specular-reflection,,,mapped,high,,,,"class id 0 / mask page 'Specularity'. Bright reflections of the light source. Image-quality class, NOT pathology"
+saturation,,,artefact,saturation,saturation,,,,high,,,,"class id 1 / mask page 'Saturation'. Over-/under-exposed (clipped) regions"
+artifact,,,artefact,artifact,other-artefact,,,mapped,high,,,,"class id 2 / mask page 'Artefact'. Miscellaneous artefacts (motion, stains, text overlays, colour shifts)"
+blur,,,artefact,blur,blur,,,,high,,,,"class id 3. Box only, no mask page"
+contrast,,,artefact,contrast,low-contrast,,,mapped,medium,,,,"class id 4. Low-contrast / flat regions; box only, no mask page"
+bubbles,,,artefact,bubbles,bubbles,,,,high,,,,"class id 5 / mask page 'Bubbles'"
+instrument,,,artefact,instrument,instrument,,,,medium,,,,"class id 6 / mask page 'Instrument'. Tool in view; category artefact (it is not an intervention label)"
+blood,,,artefact,blood,blood-in-view,,,mapped,medium,,,,"class id 7 / mask page 'blood'. Blood obscuring the view = a view-quality class here, NOT the pathological finding bleeding"

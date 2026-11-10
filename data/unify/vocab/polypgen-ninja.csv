@@ -1,0 +1,4 @@
+native_key,region,site,category,finding,finding_harmonized,finding_parent,finding_subtype,finding_harmonization,label_confidence,imaging,procedure,location_source,note
+polyp,lower-gi-tract,colon,pathological-findings,polyp,polyps,polyps,,mapped,high,,,,classTitle of a Supervisely bitmap object (one polyp instance)
+positive,lower-gi-tract,colon,pathological-findings,positive,polyps,polyps,,mapped,low,,,,image tag `positive` WITHOUT any bitmap object (641 frames): positive per tag but no geometry (qa flag annotation-missing)
+negative,lower-gi-tract,colon,background,no-polyp-annotated,no-polyp-annotated,no-polyp-annotated,,derived,high,,,,image tag `negative`: explicit polyp-free frame of a sequence (NOT verified normal mucosa)

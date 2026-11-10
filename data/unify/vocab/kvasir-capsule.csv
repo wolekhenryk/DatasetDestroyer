@@ -1,0 +1,15 @@
+native_key,region,site,category,finding,finding_harmonized,finding_parent,finding_subtype,finding_harmonization,label_confidence,imaging,procedure,location_source,note
+Ampulla of vater,upper-gi-tract,duodenum,anatomical-landmarks,ampulla-of-vater,ampulla-of-vater,,,,medium,,,class-name,landmark (10 frames; 1 video); duodenum = upper-gi-tract by the table convention (the capsule paper lists it as a small-bowel landmark) -> region medium confidence
+Angiectasia,unknown,unknown,pathological-findings,angiectasia,angiectasia,,,,high,,,unknown,vascular lesion; site not in the source (region_derived carries the landmark-order heuristic)
+Blood - fresh,unknown,unknown,pathological-findings,blood-fresh,blood-fresh,bleeding,,,high,,,unknown,fresh blood / bleeding; parent `bleeding` so that capsule `bleeding` classes of other datasets can be pooled
+Blood - hematin,unknown,unknown,pathological-findings,blood-hematin,blood-hematin,bleeding,,,high,,,unknown,hematin = old digested blood; parent `bleeding`
+Erosion,unknown,unknown,pathological-findings,erosion,erosion,,,,high,,,unknown,
+Erythema,unknown,unknown,pathological-findings,erythema,erythema,,,,high,,,unknown,
+Foreign body,unknown,unknown,pathological-findings,foreign-body,foreign-body,,,,low,,,unknown,not a pathology but a lumen object (ingested or retained material); filed under pathological-findings because the capsule class list names it among the findings -> low confidence for the category
+Ileocecal valve,lower-gi-tract,ileocecal-valve,anatomical-landmarks,ileocecal-valve,ileocecal-valve,,,,medium,,,class-name,landmark (4189 frames); terminal ileum / cecum border -> lower-gi-tract by the table convention (region medium confidence)
+Lymphangiectasia,unknown,unknown,pathological-findings,lymphangiectasia,lymphangiectasia,,,,high,,,unknown,
+Normal clean mucosa,unknown,unknown,normal,normal-clean-mucosa,normal-mucosa,,,mapped,high,,,unknown,explicit normal class; the class also means a clean (unobstructed) view
+Polyp,unknown,unknown,pathological-findings,polyp,polyps,polyps,,mapped,medium,,,unknown,55 frames from ONE video; small-bowel polyp seen by a capsule (derived zone small-bowel) -> equal slug does not mean equal appearance: always combine `polyps` with `procedure`
+Pylorus,upper-gi-tract,pylorus,anatomical-landmarks,pylorus,pylorus,,,,high,,,class-name,landmark (stomach / duodenum border)
+Reduced mucosal view,unknown,unknown,quality-of-mucosal-views,reduced-mucosal-view,reduced-view,,,mapped,high,,,unknown,bubbles / debris / turbid fluid obscure the mucosa; same meaning as the Hyper-Kvasir upper-GI class reduced-view
+Ulcer,unknown,unknown,pathological-findings,ulcer,ulcer,,,,high,,,unknown,
