@@ -7,6 +7,7 @@ Everything in this folder (`data_to_merge/`) except the nine dataset folders was
 | `merge_datasets.ipynb` | runs the merge: executed notebook (outputs saved, ~70 s), the thin driver of the `unify/` package |
 | `merged-labels.csv` | **the result: 142,183 rows x 104 columns**, UTF-8, LF, header, no index, 147 MB, byte-for-byte reproducible |
 | `MERGE_PROCESS.md` | this document |
+| `split-manifest.csv`, `split-groups.csv`, `near-dup-pairs.csv`, `unify/split.py` | group-level split into the six benchmark roles (translator_train / posttrain / val, expert_train / val, test) built *from* `merged-labels.csv`; documentation `docs/SPLIT.md`, generated tables `docs/split-coverage.md` |
 | `unify/` | the code: `schema.py` (columns + vocabularies), `common.py` (helpers), `context.py`, `registry.py`, `build.py` (generic post-processing), `validate.py` (121 checks), `adapters/<dataset>.py` x9 + `_template.py`, `vocab/<dataset>.csv` x9 + `_template.csv`, `tools/` (self-test, per-dataset verification scripts), `data/` (Hyper-Kvasir video metadata snapshot), `cache/` (md5 cache, safe to delete) |
 | `docs/SCHEMA.md` | column dictionary (generated from `unify/schema.py`) |
 | `docs/ADD_A_DATASET.md` | **how to plug in a new dataset** (7 steps + the rules) |

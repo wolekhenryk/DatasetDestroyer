@@ -11,7 +11,11 @@
 
 # --- Allowlist: the only things in data/ that belong in git -----------------
 !/data/MERGE_PROCESS.md
-!/data/merged-labels.csv
+# merged-labels.csv (~150 MB) is deliberately NOT allowlisted: regenerate it with `python -m unify`
+# train/val/test assignment (docs/SPLIT.md): the manifest is the versioned hand-over file
+!/data/split-manifest.csv
+!/data/split-groups.csv
+!/data/near-dup-pairs.csv
 !/data/docs/
 !/data/unify/
 
